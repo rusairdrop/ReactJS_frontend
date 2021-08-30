@@ -4,8 +4,13 @@ import env from '../env.json';
 const Create = () => {
   
   const [url, setUrl] = useState('');
+  const [lineClass, setLineClass] = useState('hide');
+  const [formClass, setFormClass] = useState('');
   
   const sendData = (obj) => {
+    setFormClass('hide');
+    setLineClass('');
+    
     fetch(env.urlBackend, {
       method: 'POST',
       headers: {
@@ -35,7 +40,7 @@ const Create = () => {
   
   return (
     <div>
-      <form onSubmit={loadDataFromForm}>
+      <form onSubmit={loadDataFromForm} className={formClass}>
         <label htmlFor="">Введите заметку</label>
         <textarea name="note"
                   id="note"
@@ -44,6 +49,20 @@ const Create = () => {
                   defaultValue='Test'/>
         <button type='submit'>Создать</button>
       </form>
+      <div>
+        <div className={lineClass}>
+          <div>
+            {url}
+          </div>
+          <div>
+            <button onClick={function () {
+              window.location.reload()
+            }}>
+              Создать новую заметку
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
