@@ -1,3 +1,6 @@
 .hide {
   display: none;
 }
+.active {
+  color: red;
+}
