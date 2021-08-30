@@ -59,22 +59,22 @@ const Note = () => {
   return (
     <div>
       <div className={lineClass}>
-        <h4>Note:</h4>
-        <div>{noteText}</div>
+        <h4 className='note__title'>Note:</h4>
+        <div className='note__text'>{noteText}</div>
         <div>
-          <button onClick={searchNote}>
-            Смотреть еще одну заметку
+          <button className='btn' onClick={searchNote}>
+            Search Note
           </button>
         </div>
       </div>
       <div className={errorClass}>
-        <p>Произошла ошибка, хеш не найден!</p>
+        <p>An error occurred, the note was not found!</p>
       </div>
       <div className={formClass}>
         <form action="" onSubmit={getNote}>
-          <label htmlFor='url'>Введите хеш заметки</label>
+          <label htmlFor='url'>Введите хеш заметки: </label>
           <input type='text' name='url' id='url' className='form-control'/>
-          <button type='submit' className='btn btn-primary'>Искать заметку</button>
+          <button type='submit' className='btn'>Search Note</button>
         </form>
       </div>
     </div>

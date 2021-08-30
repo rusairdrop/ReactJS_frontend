@@ -41,24 +41,26 @@ const Create = () => {
   return (
     <div>
       <form onSubmit={loadDataFromForm} className={formClass}>
-        <label htmlFor="">Введите заметку</label>
+        <label htmlFor="note">
         <textarea name="note"
                   id="note"
-                  cols="30"
-                  rows="10"
-                  defaultValue='Test'/>
-        <button type='submit'>Создать</button>
+                  rows="5"
+                  placeholder='Enter your note text...'
+                  defaultValue=''/>
+        </label>
+        <button className='btn' type='submit'>Create</button>
       </form>
       <div>
         <div className={lineClass}>
-          <div>
+          <div className='note__url'>
+            <p>Copy the URL and transfer to the addressee:</p>
             {url}
           </div>
           <div>
-            <button onClick={function () {
+            <button className='btn' onClick={function () {
               window.location.reload()
             }}>
-              Создать новую заметку
+              Create new note
             </button>
           </div>
         </div>
