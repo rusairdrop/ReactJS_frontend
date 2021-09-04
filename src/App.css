@@ -8,9 +8,11 @@ body {
   color: #ffffff;
   background-color: #252629;
 }
+
 * {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -19,6 +21,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 ul,
 ol,
 li {
@@ -26,6 +29,7 @@ li {
   margin: 0;
   list-style: none;
 }
+
 /* ==== Header ==== */
 .header {
   width: 100%;
@@ -39,15 +43,18 @@ li {
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .header__logo {
   font-size: .8em;
 }
+
 .header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 15px;
 }
+
 .header__link {
   margin-left: 18px;
 
@@ -61,10 +68,12 @@ li {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .main__buttons {
   display: flex;
   flex-direction: row;
 }
+
 .btn {
   padding: 10px;
   margin: 10px;
@@ -88,20 +97,25 @@ li {
 
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #c03434;
   color: #dcdcdc;
 }
+
 .main__text {
   margin: 30px;
   font-size: .9em;
 }
-.main__text ul{
+
+.main__text ul {
   margin-left: 35px;
 }
-.main__text li{
+
+.main__text li {
   list-style: circle;
 }
+
 .main__text a {
   color: #da3838;
   font-size: 1.2em;
@@ -124,10 +138,12 @@ li {
   font-size: 0.8em;
   margin: 0 auto;
 }
+
 .footer__social {
   padding-top: 10px;
   margin: 0 auto;
 }
+
 .footer__social-link {
   margin: 10px;
 
@@ -135,6 +151,7 @@ li {
   color: #a1a1a1;
   font-size: 0.7em;
 }
+
 .footer__social-link:hover {
   color: #EC3D3D;
 }
@@ -144,21 +161,24 @@ li {
   font-size: 1.1em;
   color: #ffffff;
 
-  border  : 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 
-  padding : 10px;
-  margin  : 10px;
+  padding: 10px;
+  margin: 10px;
   width: 50%;
 
   background: none;
 }
-#note:focus{
+
+#note:focus {
   outline: 0;
 }
+
 .note__url {
   margin-bottom: 20px;
 }
+
 .note__url p {
   color: #7e7e7e;
 }
@@ -168,34 +188,39 @@ li {
   font-size: 1.1em;
   color: #ffffff;
 
-  border  : 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 
-  padding : 5px 15px;
-  margin  : 10px;
+  padding: 5px 15px;
+  margin: 10px;
   width: 50%;
 
   background: none;
 }
+
 #url:focus {
   outline: 0;
 }
+
 .note__title {
   font-size: 1.1em;
   margin: 30px 15px;
-  color: #c7c7c7;
+  color: #7e7e7e;
 }
+
 .note__text {
-  margin:30px 15px;
+  margin: 30px 15px;
   padding: 15px;
 
   background-color: #34353a;
   color: #ffffff;
   font-size: 1em;
 }
+
 .note__form {
   margin: 0 15px;
 }
+
 .note__attention {
   margin: 30px 15px;
   color: #EC3D3D;
@@ -209,16 +234,19 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .err__title {
   font-size: 6em;
   color: #EC3D3D;
 }
+
 .err__subtitle {
   font-size: 2em;
   margin-bottom: 30px;
   color: #EC3D3D;
 }
-.err__text{
+
+.err__text {
   font-size: 1.1em;
 }
 
