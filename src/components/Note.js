@@ -21,7 +21,6 @@ const Note = () => {
       })
         .then(response => response.json())
         .then(response => {
-          console.log(response);
           if (response.result) {
             setNoteText(response.note);
             setLineClass('');
@@ -45,7 +44,7 @@ const Note = () => {
     let url = event.target.elements.url.value;
     url = url.trim();
     if (url === '') {
-      alert('Заполните поля!');
+      alert('Fill fields!');
       return false;
     }
     noteURL = url;
@@ -61,6 +60,7 @@ const Note = () => {
       <div className={lineClass}>
         <h4 className='note__title'>Note:</h4>
         <div className='note__text'>{noteText}</div>
+        <p className='note__attention'>Attention! After showing the note will be deleted!</p>
         <div>
           <button className='btn' onClick={searchNote}>
             Search Note
@@ -71,8 +71,8 @@ const Note = () => {
         <p>An error occurred, the note was not found!</p>
       </div>
       <div className={formClass}>
-        <form action="" onSubmit={getNote}>
-          <label htmlFor='url'>Введите хеш заметки: </label>
+        <form className='note__form' action="" onSubmit={getNote}>
+          <label htmlFor='url'>Please Enter the Note hash: </label>
           <input type='text' name='url' id='url' className='form-control'/>
           <button type='submit' className='btn'>Search Note</button>
         </form>

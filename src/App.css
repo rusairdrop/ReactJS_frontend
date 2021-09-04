@@ -182,11 +182,25 @@ li {
 }
 .note__title {
   font-size: 1.1em;
-  margin-bottom: 30px;
+  margin: 30px 15px;
 }
 .note__text {
+  margin:30px 15px;
+  padding: 15px;
+
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+
   font-size: 1em;
-  margin-bottom: 30px;
+}
+.note__form {
+  margin: 0 15px;
+}
+.note__attention {
+  margin: 30px 15px;
+  color: #EC3D3D;
+  font-size: 0.8em;
 }
 
 /* ==== Error ==== */
@@ -208,6 +222,13 @@ li {
 .err__text{
   font-size: 1.1em;
 }
+
+/* ==== About ==== */
+
+.about {
+  margin: 0 15px;
+}
+
 
 .hide {
   display: none;

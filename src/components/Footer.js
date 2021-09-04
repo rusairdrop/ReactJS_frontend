@@ -8,10 +8,10 @@ const Footer = () => {
       </div>
   
       <div className="footer__social">
-        <a target="_blank" href="#" className="footer__social-link">Telegram</a>
-        <a target="_blank" href="#" className="footer__social-link">Twitter</a>
-        <a target="_blank" href="#" className="footer__social-link">Medium</a>
-        <a target="_blank" href="#" className="footer__social-link">GitHub</a>
+        <a target="_blank" rel="noreferrer" href="https://t.me" className="footer__social-link">Telegram</a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com" className="footer__social-link">Twitter</a>
+        <a target="_blank" rel="noreferrer" href="https://medium.com" className="footer__social-link">Medium</a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/" className="footer__social-link">GitHub</a>
       </div>
     </footer>
   );

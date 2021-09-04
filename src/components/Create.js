@@ -20,7 +20,6 @@ const Create = () => {
     })
       .then(response => response.json())
       .then(response => {
-        console.log(response);
         if (response.result) {
           setUrl(env.url + '/' + response.url);
         }
@@ -53,7 +52,7 @@ const Create = () => {
       <div>
         <div className={lineClass}>
           <div className='note__url'>
-            <p>Copy the URL and transfer to the addressee:</p>
+            <p>Copy the URL and send it to the addressee:</p>
             {url}
           </div>
           <div>
