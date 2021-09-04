@@ -31,7 +31,7 @@ const Create = () => {
     let note = event.target.elements.note.value;
     note = note.trim();
     if (note === '') {
-      alert('Заполните поля');
+      alert('Enter your Note text please');
       return false;
     }
     sendData({'note': note});

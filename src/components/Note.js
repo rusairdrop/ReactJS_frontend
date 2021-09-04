@@ -58,7 +58,7 @@ const Note = () => {
   return (
     <div>
       <div className={lineClass}>
-        <h4 className='note__title'>Note:</h4>
+        <h4 className='note__title'>Note: {noteURL}</h4>
         <div className='note__text'>{noteText}</div>
         <p className='note__attention'>Attention! After showing the note will be deleted!</p>
         <div>
